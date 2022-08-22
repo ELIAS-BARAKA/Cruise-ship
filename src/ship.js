@@ -3,4 +3,11 @@ function Ship(name, startingPort) {
     this.startingPort = startingPort;
 }
 
+Ship.prototype = {
+    setSail(){
+        this.startingPort = false;
+    },
+}
+
+
 module.exports = Ship;
