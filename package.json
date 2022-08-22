@@ -1,0 +1,22 @@
+{
+  "name": "cruise-ship",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELIAS-BARAKA/Cruise-ship.git"
+  },
+  "author": "D.B.ELIAS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ELIAS-BARAKA/Cruise-ship/issues"
+  },
+  "homepage": "https://github.com/ELIAS-BARAKA/Cruise-ship#readme",
+  "dependencies": {
+    "jest": "^28.1.3"
+  }
+}
