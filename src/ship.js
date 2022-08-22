@@ -1,3 +1,5 @@
+let Port = require("./port.js");
+
 function Ship(name, startingPort) {
     this.name = name;
     this.startingPort = startingPort;
@@ -6,6 +8,9 @@ function Ship(name, startingPort) {
 Ship.prototype = {
     setSail(){
         this.startingPort = false;
+    },
+    dock(){
+        this.curremtPort = Port;
     },
 }
 

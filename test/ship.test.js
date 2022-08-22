@@ -1,4 +1,5 @@
 const Ship = require("../src/ship.js");
+const Port = require("../src/port.js");
 
 describe ("ship", () => {
     it("verify if the object creation is created", () => {
@@ -12,5 +13,11 @@ describe ("ship", () => {
         const ship = new Ship("The-Ship", "Dover");
         ship.setSail();
         expect(ship.startingPort).toBeFalsy();
+    });
+    it("test if the ship can be docked", () => {
+        const ship = new Ship("titanic", "Dover");
+        const port = new Port("venise");
+        ship.dock();
+        expect(ship.currentPort).toBeInstanceOf(Object);
     });
 });
