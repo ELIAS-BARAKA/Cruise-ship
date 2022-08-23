@@ -1,16 +1,19 @@
-let Port = require("./port.js");
+const Port = require("./port.js");
 
-function Ship(name, startingPort) {
-    this.name = name;
-    this.startingPort = startingPort;
+
+function Ship(currentPort) {
+    this.previousPort = null;
+    this.currentPort = currentPort;
+    console.log(this.currentPort);
 }
 
 Ship.prototype = {
     setSail(){
-        this.startingPort = false;
+        this.previousPort = this.currentPort;
+        this.currentPort = null;
     },
     dock(){
-        this.curremtPort = Port;
+        this.currentPort = Port;
     },
 }
 
