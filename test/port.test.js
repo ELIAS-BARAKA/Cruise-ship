@@ -10,7 +10,7 @@ describe("port", () => {
     titanic = {};
     queenMary = {};
   })
-  it("verify if the object creation is created", () => {
+  it("verify if the object creation", () => {
     expect(new Port()).toBeInstanceOf(Object);
   });
   it("can add ship", () => {
