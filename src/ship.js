@@ -26,6 +26,19 @@
       this.currentPort = itinerary.ports[previousPortIndex + 1];
 
       this.currentPort.addShip(this);
+  
+      this.renderMessage(`Docking at ${this.currentPort.name}`);
+    },
+    renderMessage(message) {
+      const messageElement = document.createElement("div");
+      messageElement.id = "message";
+      messageElement.innerHTML = message;
+
+      const viewport = document.querySelector("#viewport");
+      viewport.appendChild(messageElement);
+      setTimeout(() => {
+        viewport.removeChild(messageElement);
+      }, 1500);
     },
   };
 
